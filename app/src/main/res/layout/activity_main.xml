@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="myCalculator"
+            type="com.example.experiment04.Calculator" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/brown_50"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C9"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="9"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C6"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="6"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C3"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="3"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Cdiain"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="."
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/jian"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="－"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/cyan_500"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C15"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="＝"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/cyan_500"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Cjia"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="＋"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/cyan_500"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_CX"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="×"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/cyan_500"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C8"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="8"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C7"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="7"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_CC"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="C"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/cyan_500"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C5"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="5"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C4"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="4"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C1"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="1"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C2"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="2"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_C0"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="0"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Cm"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/cyan_500"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:icon="@drawable/ic_screen_rotation_black_24dp"
+            app:iconTint="@color/cyan_500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_X"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/cyan_500"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="480dp"
+            app:icon="@drawable/ic_backspace_cyan_500_24dp"
+
+            app:iconTint="@color/cyan_500"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/btn_yu"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:background="@color/brown_50"
+            android:gravity="center"
+            android:text="%"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/cyan_500"
+            android:textSize="@dimen/font_24"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="103dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+
+            app:rippleColor="@color/black_alpha_16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_chu"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:gravity="center"
+            android:text="÷"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:textColor="@color/cyan_500"
+            android:textSize="@dimen/font_24"
+            android:textStyle="bold"
+            app:backgroundTint="@color/brown_50"
+            app:cornerRadius="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="@color/black_alpha_16" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.64" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.76" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.88" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <TextView
+            android:id="@+id/Formula"
+            android:layout_width="327dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:autoSizeMaxTextSize="36sp"
+            android:autoSizeMinTextSize="20sp"
+            android:gravity="right|bottom"
+            android:hint="0"
+            android:maxLength="40"
+            android:scrollbars="vertical"
+            android:text="@{String.valueOf(myCalculator.getFormula())}"
+            android:textSize="36sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.279"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.806" />
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="305dp"
+            android:layout_height="45dp"
+            android:gravity="right"
+            android:hint="0"
+            android:text="@{String.valueOf(myCalculator.getResult())}"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline10"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.31" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
